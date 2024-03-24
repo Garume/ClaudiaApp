@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Claudia</name>
+    </assembly>
+    <members>
+        <member name="P:Claudia.Anthropic.Messages">
+            <summary>
+            Create a Message.
+            Send a structured list of input messages with text and/or image content, and the model will generate the next message in the conversation.
+            The Messages API can be used for for either single queries or stateless multi-turn conversations.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.NullableBoolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Double">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.NullableDouble">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Content">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ContentArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ContentBlockDelta">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ContentBlockStart">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ContentBlockStop">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Contents">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ErrorResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ErrorResponseShape">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Message">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageDelta">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageDeltaBody">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageRequest">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageStart">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageStartBody">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.MessageStop">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Metadata">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Ping">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Source">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Usage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.ReadOnlyMemoryByte">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.StringArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Claudia.AnthropicJsonSerialzierContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Claudia.AnthropicJsonSerialzierContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Claudia.AnthropicJsonSerialzierContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Claudia.AnthropicJsonSerialzierContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="F:Claudia.ErrorCode.InvalidRequestError">
+            <summary>There was an issue with the format or content of your request.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.AuthenticationError">
+            <summary>There's an issue with your API key.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.PermissionError">
+            <summary>Your API key does not have permission to use the specified resource.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.NotFoundError">
+            <summary>The requested resource was not found.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.RateLimitError">
+            <summary>Your account has hit a rate limit.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.ApiError">
+            <summary>An unexpected error has occurred internal to Anthropic's systems.</summary>
+        </member>
+        <member name="F:Claudia.ErrorCode.OverloadedError">
+            <summary>Anthropic's API is temporarily overloaded.</summary>
+        </member>
+        <member name="F:Claudia.Models.Claude3Opus">
+            <summary>
+            Most powerful model for highly complex tasks
+            </summary>
+        </member>
+        <member name="F:Claudia.Models.Claude3Sonnet">
+            <summary>
+            Ideal balance of intelligence and speed for enterprise workloads
+            </summary>
+        </member>
+        <member name="F:Claudia.Models.Claude3Haiku">
+            <summary>
+            Fastest and most compact model for near-instant responsiveness
+            </summary>
+        </member>
+        <member name="F:Claudia.Models.Claude2_1">
+            <summary>Updated version of Claude 2 with improved accuracy</summary>
+        </member>
+        <member name="F:Claudia.Models.Claude2_0">
+            <summary>Predecessor to Claude 3, offering strong all-round performance</summary>
+        </member>
+        <member name="F:Claudia.Models.Claude1_2">
+            <summary>Our cheapest small and fast model, a predecessor of Claude Haiku.</summary>
+        </member>
+        <member name="F:Claudia.StopSequnces.CloseFunctionCalls">
+            <summary>the model reached a natural stopping point</summary>
+        </member>
+        <member name="F:Claudia.StopReasons.EndTurn">
+            <summary>the model reached a natural stopping point</summary>
+        </member>
+        <member name="F:Claudia.StopReasons.MaxTokens">
+            <summary>we exceeded the requested max_tokens or the model's maximum</summary>
+        </member>
+        <member name="F:Claudia.StopReasons.StopSequence">
+            <summary>one of your provided custom stop_sequences was generated</summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.Type">
+            <summary>
+            Object type.
+            For Messages, this is always "message".
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.Role">
+            <summary>
+            Conversational role of the generated message.
+            This will always be "assistant".
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.Model">
+            <summary>
+            The model that handled the request.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.StopReason">
+            <summary>
+            The reason that we stopped.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.StopSequence">
+            <summary>
+            Which custom stop sequence was generated, if any.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageStartBody.Usage">
+            <summary>
+            Billing and rate-limit usage.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.Model">
+            <summary>
+            The model that will complete your prompt.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.MaxTokens">
+            <summary>
+            The maximum number of tokens to generate before stopping.
+            Note that our models may stop before reaching this maximum.This parameter only specifies the absolute maximum number of tokens to generate.
+            Different models have different maximum values for this parameter
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.Messages">
+            <summary>
+            Input messages.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.System">
+            <summary>
+            System prompt.
+            A system prompt is a way of providing context and instructions to Claude, such as specifying a particular goal or role.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.Metadata">
+            <summary>
+            An object describing metadata about the request.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.StopSequences">
+            <summary>
+            Custom text sequences that will cause the model to stop generating.
+            Our models will normally stop when they have naturally completed their turn, which will result in a response stop_reason of "end_turn".
+            If you want the model to stop generating when it encounters custom strings of text, you can use the stop_sequences parameter.If the model encounters one of the custom sequences, the response stop_reason value will be "stop_sequence" and the response stop_sequence value will contain the matched stop sequence.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.Stream">
+            <summary>
+            Whether to incrementally stream the response using server-sent events.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.Temperature">
+            <summary>
+            Amount of randomness injected into the response.
+            Defaults to 1.0. Ranges from 0.0 to 1.0. Use temperature closer to 0.0 for analytical / multiple choice, and closer to 1.0 for creative and generative tasks.
+            Note that even with temperature of 0.0, the results will not be fully deterministic.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.TopP">
+            <summary>
+            Use nucleus sampling.
+            In nucleus sampling, we compute the cumulative distribution over all the options for each subsequent token in decreasing probability order and cut it off once it reaches a particular probability specified by top_p.You should either alter temperature or top_p, but not both.
+            Recommended for advanced use cases only. You usually only need to use temperature.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageRequest.TopK">
+            <summary>
+            Only sample from the top K options for each subsequent token.
+            Used to remove "long tail" low probability responses.
+            Recommended for advanced use cases only. You usually only need to use temperature.
+            </summary>
+        </member>
+        <member name="P:Claudia.Message.Role">
+            <summary>
+            user or assistant.
+            </summary>
+        </member>
+        <member name="P:Claudia.Message.Content">
+            <summary>
+            single string or an array of content blocks.
+            </summary>
+        </member>
+        <member name="P:Claudia.Metadata.UserId">
+            <summary>
+            An external identifier for the user who is associated with the request.
+            This should be a uuid, hash value, or other opaque identifier.Anthropic may use this id to help detect abuse. Do not include any identifying information such as name, email address, or phone number.
+            </summary>
+        </member>
+        <member name="P:Claudia.Source.Type">
+            <summary>
+            We currently support the base64 source type for images.
+            </summary>
+        </member>
+        <member name="P:Claudia.Source.MediaType">
+            <summary>
+            We currently support the base64 source the image/jpeg, image/png, image/gif, and image/webp media types.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.Type">
+            <summary>
+            Object type.
+            For Messages, this is always "message".
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.Role">
+            <summary>
+            Conversational role of the generated message.
+            This will always be "assistant".
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.Content">
+            <summary>
+            Content generated by the model.
+            This is an array of content blocks, each of which has a type that determines its shape. Currently, the only type in responses is "text".
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.Model">
+            <summary>
+            The model that handled the request.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.StopReason">
+            <summary>
+            The reason that we stopped.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.StopSequence">
+            <summary>
+            Which custom stop sequence was generated, if any.
+            </summary>
+        </member>
+        <member name="P:Claudia.MessageResponse.Usage">
+            <summary>
+            Billing and rate-limit usage.
+            </summary>
+        </member>
+        <member name="P:Claudia.Usage.InputTokens">
+            <summary>
+            The number of input tokens which were used.
+            </summary>
+        </member>
+        <member name="P:Claudia.Usage.OutputTokens">
+            <summary>
+            The number of output tokens which were used.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute">
+            <summary>
+            Specifies that the method or property will ensure that the listed field and property members have not-null values.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String)">
+            <summary>
+            Initializes the attribute with a field or property member.
+            </summary>
+            <param name="member">The field or property member that is promised to be not-null.</param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String[])">
+            <summary>
+            Initializes the attribute with the list of field and property members.
+            </summary>
+            <param name="members">The list of field and property members that are promised to be not-null.</param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members">
+            <summary>
+            Gets field or property member names.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute">
+            <summary>
+            Specifies that the method or property will ensure that the listed field and property
+            members have not-null values when returning with the specified return value condition.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
+            <summary>
+            Initializes the attribute with the specified return value condition and a field or property member.
+            </summary>
+            <param name="returnValue">The return value condition. If the method returns this value, the associated parameter will not be null.</param>
+            <param name="member">The field or property member that is promised to be not-null.</param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
+            <summary>
+            Initializes the attribute with the specified return value condition and list of field and property members.
+            </summary>
+            <param name="returnValue">The return value condition. If the method returns this value, the associated parameter will not be null.</param>
+            <param name="members">The list of field and property members that are promised to be not-null.</param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue">
+            <summary>
+            Gets the return value condition.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members">
+            <summary>
+            Gets field or property member names.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute">
+            <summary>
+            Specifies that this constructor sets all required members for the current type,
+            and callers do not need to set any required members themselves.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute">
+            <summary>
+            Specifies the syntax used in a string.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.#ctor(System.String)">
+            <summary>
+            Initializes the <see cref="T:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute"/> with the identifier of the syntax used.
+            </summary>
+            <param name="syntax">The syntax identifier.</param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.#ctor(System.String,System.Object[])">
+            <summary>Initializes the <see cref="T:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute"/> with the identifier of the syntax used.</summary>
+            <param name="syntax">The syntax identifier.</param>
+            <param name="arguments">Optional arguments associated with the specific syntax employed.</param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Syntax">
+            <summary>Gets the identifier of the syntax used.</summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Arguments">
+            <summary>Optional arguments associated with the specific syntax employed.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.CompositeFormat">
+            <summary>The syntax identifier for strings containing composite formats for string formatting.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.DateOnlyFormat">
+            <summary>The syntax identifier for strings containing date format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.DateTimeFormat">
+            <summary>The syntax identifier for strings containing date and time format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.EnumFormat">
+            <summary>The syntax identifier for strings containing <see cref="T:System.Enum"/> format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.GuidFormat">
+            <summary>The syntax identifier for strings containing <see cref="T:System.Guid"/> format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Json">
+            <summary>The syntax identifier for strings containing JavaScript Object Notation (JSON).</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.NumericFormat">
+            <summary>The syntax identifier for strings containing numeric format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Regex">
+            <summary>The syntax identifier for strings containing regular expressions.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.TimeOnlyFormat">
+            <summary>The syntax identifier for strings containing time format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.TimeSpanFormat">
+            <summary>The syntax identifier for strings containing <see cref="T:System.TimeSpan"/> format specifiers.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Uri">
+            <summary>The syntax identifier for strings containing URIs.</summary>
+        </member>
+        <member name="F:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Xml">
+            <summary>The syntax identifier for strings containing XML.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute">
+            <summary>
+            Used to indicate a byref escapes and is not scoped.
+            </summary>
+            <remarks>
+            <para>
+            There are several cases where the C# compiler treats a <see langword="ref"/> as implicitly
+            <see langword="scoped"/> - where the compiler does not allow the <see langword="ref"/> to escape the method.
+            </para>
+            <para>
+            For example:
+            <list type="number">
+                <item><see langword="this"/> for <see langword="struct"/> instance methods.</item>
+                <item><see langword="ref"/> parameters that refer to <see langword="ref"/> <see langword="struct"/> types.</item>
+                <item><see langword="out"/> parameters.</item>
+            </list>
+            </para>
+            <para>
+            This attribute is used in those instances where the <see langword="ref"/> should be allowed to escape.
+            </para>
+            <para>
+            Applying this attribute, in any form, has impact on consumers of the applicable API. It is necessary for
+            API authors to understand the lifetime implications of applying this attribute and how it may impact their users.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute">
+            <summary>
+            An attribute that allows parameters to receive the expression of other parameters.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute"/> class.
+            </summary>
+            <param name="parameterName">The condition parameter value.</param>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.ParameterName">
+            <summary>
+            Gets the parameter name the expression is retrieved from.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute">
+            <summary>
+            Indicates that compiler support for a particular feature is required for the location where this attribute is applied.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute"/> type.
+            </summary>
+            <param name="featureName">The name of the feature to indicate.</param>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName">
+            <summary>
+            The name of the compiler feature.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.IsOptional">
+            <summary>
+            If true, the compiler can choose to allow access to the location where this attribute is applied if it does not understand <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName"/>.
+            </summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.RefStructs">
+            <summary>
+            The <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName"/> used for the ref structs C# feature.
+            </summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.RequiredMembers">
+            <summary>
+            The <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName"/> used for the required members C# feature.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute">
+            <summary>
+            Indicates which arguments to a method involving an interpolated string handler should be passed to that handler.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute"/> class.
+            </summary>
+            <param name="argument">The name of the argument that should be passed to the handler.</param>
+            <remarks><see langword="null"/> may be used as the name of the receiver in an instance method.</remarks>
+        </member>
+        <member name="M:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute"/> class.
+            </summary>
+            <param name="arguments">The names of the arguments that should be passed to the handler.</param>
+            <remarks><see langword="null"/> may be used as the name of the receiver in an instance method.</remarks>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments">
+            <summary>
+            Gets the names of the arguments that should be passed to the handler.
+            </summary>
+            <remarks><see langword="null"/> may be used as the name of the receiver in an instance method.</remarks>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute">
+            <summary>
+            Indicates the attributed type is to be used as an interpolated string handler.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.IsExternalInit">
+            <summary>
+            Reserved to be used by the compiler for tracking metadata.
+            This class should not be used by developers in source code.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.ModuleInitializerAttribute">
+             <summary>
+             Used to indicate to the compiler that a method should be called
+             in its containing module's initializer.
+             </summary>
+             <remarks>
+             When one or more valid methods
+             with this attribute are found in a compilation, the compiler will
+             emit a module initializer which calls each of the attributed methods.
+            
+             Certain requirements are imposed on any method targeted with this attribute:
+             - The method must be `static`.
+             - The method must be an ordinary member method, as opposed to a property accessor, constructor, local function, etc.
+             - The method must be parameterless.
+             - The method must return `void`.
+             - The method must not be generic or be contained in a generic type.
+             - The method's effective accessibility must be `internal` or `public`.
+            
+             The specification for module initializers in the .NET runtime can be found here:
+             https://github.com/dotnet/runtime/blob/main/docs/design/specs/Ecma-335-Augments.md#module-initializer
+             </remarks>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.RequiredMemberAttribute">
+            <summary>
+            Specifies that a type has required members or that a member is required.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.SkipLocalsInitAttribute">
+            <summary>
+            Used to indicate to the compiler that the <c>.locals init</c> flag should not be set in method headers.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute"/> class with the specified message.
+            </summary>
+            <param name="message">An optional message associated with this attribute instance.</param>
+        </member>
+        <member name="P:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Message">
+            <summary>
+            Returns the optional message associated with this attribute instance.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Url">
+            <summary>
+            Returns the optional URL associated with this attribute instance.
+            </summary>
+        </member>
+    </members>
+</doc>

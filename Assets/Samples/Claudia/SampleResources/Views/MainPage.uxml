@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+
+    <appui:Panel class="claudia-root-panel" scale="large">
+        <ui:VisualElement class="claudia-root">
+            <appui:Text class="claudia-title" text="UIToolKit Claudia"/>
+            <ui:VisualElement class="claudia-main-content">
+                <ui:VisualElement class="content">
+                    <appui:TextArea class="claudia-text-area"
+                                    is-read-only="true"
+                                    value="Claudia is a simple UI Toolkit application that demonstrates the use of MVVM and Redux patterns."
+                    />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="claudia-control">
+                <ui:VisualElement class="content">
+                    <ui:VisualElement class="claudia-temperature">
+                        <appui:Text class="claudia-temperature-title" text="Temperature"/>
+                        <appui:SliderFloat class="claudia-temperature-slider" value="1.0" low-value="0"
+                                           high-value="1.0" format-string="F2"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="claudia-system">
+                        <appui:Text class="claudia-system-title" text="System"/>
+                        <appui:TextArea class="claudia-system-text-area"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="claudia-form">
+                    <appui:TextArea class="claudia-form-text-area"/>
+                    <appui:Button class="claudia-form-button" title="Send"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </appui:Panel>
+</ui:UXML>

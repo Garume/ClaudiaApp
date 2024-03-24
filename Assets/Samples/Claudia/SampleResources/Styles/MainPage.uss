@@ -1,0 +1,112 @@
+MainPage {
+    width: 100%;
+    height: 100%;
+}
+
+.claudia-root {
+    width: 100%;
+    height: 100%;
+    padding: var(--appui-spacing-150);
+    display: flex;
+    flex-direction: column;
+}
+
+.claudia-title {
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-text-align: middle-center;
+}
+
+.claudia-main-content {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: var(--appui-spacing-150);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.claudia-main-content .content {
+    height: 100%;
+    background-color: white;
+    padding: var(--appui-spacing-25);
+    border-radius: var(--appui-border-radius-sm);
+}
+
+.claudia-text-area {
+    flex-grow: 1;
+}
+
+.claudia-control {
+    flex-grow: 0;
+
+    width: 100%;
+
+    background-color: white;
+    padding: var(--appui-spacing-50);
+    border-bottom-left-radius: var(--appui-border-radius-sm);
+    border-bottom-right-radius: var(--appui-border-radius-sm);
+}
+
+.claudia-control .content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.claudia-temperature {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: var(--appui-spacing-25);
+    margin-right: var(--appui-spacing-100);
+}
+
+.claudia-temperature-title {
+    color: black;
+}
+
+.claudia-temperature-slider .unity-text-element {
+    color: black;
+}
+
+.claudia-system-title {
+    color: black;
+}
+
+.claudia-system {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.claudia-system-text-area {
+    min-height: auto;
+    height: 80%;
+}
+
+.claudia-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.claudia-form-text-area {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: auto;
+    max-height: 70%;
+
+    margin-right: var(--appui-spacing-25);
+}
+
+.claudia-form-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.appui-textarea__resize-handle {
+    display: none;
+}
