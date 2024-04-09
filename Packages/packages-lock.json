@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "com.cysharp.r3": {
+      "version": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0"
+      },
+      "hash": "0025cec067a0f6c28a40673ac7ef12ad4336e631"
+    },
+    "com.garume.unity-redux-middleware": {
+      "version": "https://github.com/Garume/Unity-Redux-Middleware.git?path=/Assets/UnityReduxMiddleware",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.dt.app-ui": "1.0.6"
+      },
+      "hash": "a9b945c97c0f6c6c39b9916d6450f8991b34aa7e"
+    },
     "com.github-glitchenzo.nugetforunity": {
       "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
       "depth": 0,
