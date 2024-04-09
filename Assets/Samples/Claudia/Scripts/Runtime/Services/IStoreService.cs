@@ -1,9 +1,9 @@
-﻿using Unity.AppUI.Redux;
+﻿using UnityReduxMiddleware;
 
 namespace ClaudiaApp.Services
 {
     public interface IStoreService
     {
-        Store Store { get; }
+        MiddlewareStore Store { get; }
     }
 }

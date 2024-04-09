@@ -14,8 +14,8 @@ namespace ClaudiaApp.Tests.ViewModels
         [SetUp]
         public void SetUp()
         {
-            _storeService = new StoreService();
             _localStorageService = new MockStorageService();
+            _storeService = new StoreService(_localStorageService);
             _viewModel = new MainViewModel(_storeService, _localStorageService);
         }
 

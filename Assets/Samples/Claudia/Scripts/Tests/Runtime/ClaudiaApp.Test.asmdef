@@ -6,7 +6,8 @@
         "UnityEditor.TestRunner",
         "ClaudiaUiToolKit",
         "Unity.AppUI.MVVM",
-        "Unity.AppUI.Redux"
+        "Unity.AppUI.Redux",
+        "UnityReduxMiddleware"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

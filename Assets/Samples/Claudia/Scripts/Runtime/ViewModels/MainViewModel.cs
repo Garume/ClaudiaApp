@@ -30,17 +30,7 @@ namespace ClaudiaApp.ViewModels
             SetInputMessageCommand = new RelayCommand<string>(SetInputMessage);
             SendMessageCommand = new AsyncRelayCommand(SendMessage);
 
-            var initialState = localService.GetValue(Actions.SliceName, new AppState());
-            _storeService.Store.CreateSlice(Actions.SliceName, initialState, builder =>
-            {
-                builder
-                    .Add<float>(Actions.SetTemperature, Reducers.SetTemperatureValueReducer)
-                    .Add<List<Message>>(Actions.SetChatMessage, Reducers.SetChatMessage)
-                    .Add<string>(Actions.SetInputMessage, Reducers.SetInputMessageReducer)
-                    .Add<string>(Actions.SetSystemString, Reducers.SetSystemStringReducer);
-            });
-
-            _chatMessage = initialState.ChatMessages;
+            _chatMessage = storeService.Store.GetState<AppState>(Actions.SliceName).ChatMessages;
 
             _unSubscriber = storeService.Store.Subscribe<AppState>(Actions.SliceName, OnStateChanged);
             App.shuttingDown += OnShuttingDown;
@@ -74,33 +64,7 @@ namespace ClaudiaApp.ViewModels
 
             try
             {
-                var state = _storeService.Store.GetState<AppState>(Actions.SliceName);
-                var anthropic = state.Anthropic;
-                ChatMessage.Add(new Message { Role = Roles.User, Content = state.inputMessage });
-                var stream = anthropic.Messages.CreateStreamAsync(new MessageRequest
-                {
-                    Model = Claudia.Models.Claude3Opus,
-                    MaxTokens = 1024,
-                    Temperature = state.temperatureValue,
-                    System = string.IsNullOrEmpty(state.systemString) ? null : state.systemString,
-                    Messages = state.ChatMessages.ToArray()
-                }, cancellationToken: token);
-
-                var currentMessage = new Message
-                {
-                    Role = Roles.Assistant,
-                    Content = ""
-                };
-
-                ChatMessage.Add(currentMessage);
-
-
-                await foreach (var messageStreamEvent in stream)
-                    if (messageStreamEvent is ContentBlockDelta content)
-                    {
-                        currentMessage.Content[0].Text += content.Delta.Text;
-                        _storeService.Store.Dispatch(Actions.SetChatMessage, ChatMessage);
-                    }
+                await _storeService.Store.DispatchAsync(Actions.RequestMessage, token);
             }
             catch (Exception e)
             {
